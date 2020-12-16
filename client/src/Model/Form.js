@@ -40,7 +40,7 @@ class Form extends Component{
             email: this.state.customer.email
           }
         }
-        Axios.post('https://jsonplaceholder.typicode.com/users', { user })
+        Axios.post('/schedule', { user })
           .then(res=>{
             console.log(res);
             console.log(res.data);

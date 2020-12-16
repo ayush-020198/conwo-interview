@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     res.send('Hello');
 })
 
-app.get('/schedule', (req, res) => {
+app.post('/schedule', (req, res) => {
     const customer = {
         sLat: req.body.sLat,
         sLong: req.body.sLong,
