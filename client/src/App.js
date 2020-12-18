@@ -1,10 +1,13 @@
 import './App.css';
-import Form from './Model/Form'
+import Form from './Components/Form/Form'
+import Request from './Components/Reques List/Request'
 
 function App() {
   return (
     <div className="App">
       <Form />
+      <hr />
+      <Request />
     </div>
   );
 }
