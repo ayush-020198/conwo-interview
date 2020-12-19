@@ -5,9 +5,9 @@ import Request from './Components/Reques List/Request'
 function App() {
   return (
     <div className="App">
-      <Form />
-      <hr />
-      <Request />
+        <Form />
+    <hr />
+        <Request />
     </div>
   );
 }

@@ -41,10 +41,10 @@ class Form extends Component{
           }
         }
         Axios.post('/schedule', { user })
-          .then(res=>{
-            console.log(res);
-            console.log(res.data);
-          })
+        //   .then(res=>{
+        //     console.log(res);
+        //     console.log(res.data);
+        //   })
       }
 
     render(){
@@ -68,7 +68,7 @@ class Form extends Component{
                             <div style={{textAlign: "left"}}><label className="form-label">Email: <input type="email" name="email" value={this.state.customer.email} onChange={this.changeHandler}/></label></div>
                             <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                             </div>
-                            <button type="submit" className="btn btn-primary">Remind Me!</button>
+                                <button type="submit" className="btn btn-primary">Remind Me!</button>
                         </form>
                     </div>  
                 </div>

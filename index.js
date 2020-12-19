@@ -3,14 +3,11 @@ const handleLogic = require('./controllers/Logic');
 const cors = require('cors');
 const app = express();
 
-
-
 app.use(express.json());
 app.use(cors());
 
 app.post('/schedule', (req, res) => {
     handleLogic.Logic(req, res);
-   
 });
 
 if(process.env.NODE_ENV === 'production'){
