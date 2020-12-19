@@ -18,6 +18,15 @@ app.post('/schedule', (req, res) => {
    
 });
 
+if(process.env.NODE === 'production'){
+    app.use(express.static('client/build'));
+
+    const path = require('path');
+    app.get('*', (req, res) =>{
+        res.sendFile(path.resolve(__dirnmame, 'client', 'build', 'index.html' ))
+    })
+}
+
 app.listen(process.env.PORT || 3001, () => {
     console.log('Server is running on Port 3001')
 })
