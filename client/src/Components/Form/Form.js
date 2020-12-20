@@ -41,10 +41,10 @@ class Form extends Component{
           }
         }
         Axios.post('/schedule', { user })
-        //   .then(res=>{
-        //     console.log(res);
-        //     console.log(res.data);
-        //   })
+          .then(res=>{
+            console.log(res);
+            console.log(res.data);
+          })
       }
 
     render(){

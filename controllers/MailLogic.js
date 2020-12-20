@@ -11,6 +11,8 @@ const MailLogic = (req, diffMin, diffHr) => {
 
     const transporter = nodemailer.createTransport({
         service: 'gmail',
+        secure: false,
+        port: 465,
         auth: {
             user: 'hatimsrinivas@gmail.com',
             pass: 'hatim@123'
